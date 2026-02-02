@@ -22,7 +22,6 @@ return new class extends Migration
             
             $table->timestamps();
             
-            // Indexing agar query history cepat
             $table->index(['auditable_type', 'auditable_id']);
         });
     }
