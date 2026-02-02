@@ -13,6 +13,14 @@ Unlike standard logging tools, Chronos provides a beautiful, visual timeline of 
 * **User Attribution:** Tracks which user (and IP address) performed the action.
 * **Dark Mode Support:** Fully integrated with Filament's native theme.
 
+## 💻 Environment
+
+Chronos is built to be robust and future-proof.
+
+**PHP**: 8.1 or higher
+**Laravel**: 10.x / 11.x / 12.x
+**Filament**: 3.x / 4.x
+
 ## 📦 Installation
 
 You can install the package via composer:
