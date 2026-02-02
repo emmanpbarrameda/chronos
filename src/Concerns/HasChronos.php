@@ -16,16 +16,20 @@ trait HasChronos
         });
 
         static::updated(function (Model $model) {
-            if (empty($model->getDirty())) return;
-            
+            $changes = $model->getChanges(); 
+
+            unset($changes['updated_at']);
+
+            if (empty($changes)) return;
+
             $old = [];
             $new = [];
 
-            foreach ($model->getDirty() as $key => $value) {
+            foreach ($changes as $key => $newValue) {
                 if (in_array($key, $model->getChronosIgnoredAttributes())) continue;
 
                 $old[$key] = $model->getOriginal($key);
-                $new[$key] = $value;
+                $new[$key] = $newValue;
             }
 
             if (!empty($new)) {
@@ -44,7 +48,7 @@ trait HasChronos
             'auditable_type' => get_class($model),
             'auditable_id'   => $model->getKey(),
             'event'          => $event,
-            'old_values'     => $old,
+            'old_values'     => $old, 
             'new_values'     => $new,
             'url'            => Request::fullUrl(),
             'ip_address'     => Request::ip(),
@@ -66,8 +70,6 @@ trait HasChronos
             'deleted_at',
             'password',
             'remember_token',
-            'two_factor_secret',
-            'two_factor_recovery_codes',
         ];
     }
 }

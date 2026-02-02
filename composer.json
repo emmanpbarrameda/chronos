@@ -2,7 +2,7 @@
     "name": "ianstudios/chronos",
     "description": "Time-Travel Audit Trail for Filament Ecosystem.",
     "license": "MIT",
-    "version": "1.5.0",
+    "version": "1.7.0",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "authors": [

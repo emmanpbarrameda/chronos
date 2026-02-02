@@ -20,11 +20,16 @@ class ChronosHistoryAction extends Action
             ->icon('heroicon-m-clock')
             ->color('gray')
             ->modalHeading('Chronos Audit Trail')
-            ->modalSubmitAction(false) // View only
+            ->modalSubmitAction(false)
             ->modalCancelAction(false)
             ->slideOver()
-            ->modalContent(fn (Model $record) => view('chronos::history-modal', [
-                'audits' => $record->audits()->with('user')->get()
-            ]));
+            ->modalContent(function (?Model $record) {
+                if (!$record) {
+                    return view('chronos::history-modal', ['audits' => collect()]);
+                }
+                return view('chronos::history-modal', [
+                    'audits' => $record->audits()->with('user')->latest()->get()
+                ]);
+            });
     }
 }
