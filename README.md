@@ -21,7 +21,7 @@ Chronos is built to be robust and future-proof.
 
 **Laravel**: 10.x / 11.x / 12.x
 
-**Filament**: 3.x / 4.x
+**Filament**: 3.x / 4.x / 5.x
 
 ## 📦 Installation
 
