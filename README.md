@@ -2,8 +2,7 @@
 
 Unlike standard logging tools, Chronos provides a beautiful, visual timeline of your data. It enables administrators to view exactly **who** changed **what** and **when**, with a stunning side-by-side diff view (Before vs. After) directly within your resource dashboard.
 
-![Chronos](https://creator.ianstudios.id/storage/docs-images/01KGER7CRV8RDRJD5MSM05ZB1G.png)
-
+![Alt text](https://creator.ianstudios.id/storage/docs-images/01KGER7CRV8RDRJD5MSM05ZB1G.png)
 
 ## ✨ Features
 
