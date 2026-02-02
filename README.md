@@ -1,6 +1,6 @@
 **Chronos** is a "Time-Travel" audit trail system designed exclusively for the **Filament** ecosystem.
 
-Unlike standard logging tools, Chronos provides a beautiful, visual timeline of your data. It enables administrators to view exactly **who** changed **what** and **when**, with a stunning side-by-side diff view (Before vs. After) directly within your resource dashboard.
+Unlike standard logging tools, Chronos provides a beautiful, visual timeline of your data. It enables administrators to view exactly **who** changed **what** and **when**, with a stunning timeline and side-by-side diff view (Before vs. After) directly within your resource dashboard.
 
 ![Alt text](https://creator.ianstudios.id/storage/docs-images/01KGER7CRV8RDRJD5MSM05ZB1G.png)
 
@@ -29,12 +29,6 @@ You can install the package via composer:
 
 ```bash
 composer require ianstudios/chronos
-```
-
-After installing, run the migrations to create the audit table:
-
-```bash
-php artisan migrate
 ```
 
 ## 🚀 Usage
