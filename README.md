@@ -2,9 +2,17 @@
 
 ![Chronos](https://creator.ianstudios.id/storage/docs-images/01KGFGE82YEHWN0QM3PGXBADC3.png)
 
-[![Latest Version](https://img.shields.io/badge/version-v1.7.0-blue.svg)](https://github.com/Ianstudios/Chronos/releases)
-[![Filament Version](https://img.shields.io/badge/Filament-v4-orange.svg)](https://filamentphp.com)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
+<p align="center">
+  <a href="https://github.com/Ianstudios/Chronos/releases">
+    <img src="https://img.shields.io/badge/version-v1.7.0-blue.svg" alt="Latest Version">
+  </a>
+  <a href="https://filamentphp.com">
+    <img src="https://img.shields.io/badge/Filament-v4-orange.svg" alt="Filament Version">
+  </a>
+  <a href="LICENSE.md">
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="License">
+  </a>
+</p>
 
 **Chronos** is a "Time-Travel" audit trail system designed exclusively for the **Filament** ecosystem.
 
